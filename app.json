@@ -1,0 +1,68 @@
+{
+  "name": "Bot",
+  "description": "file sharing bot store posts and it can access by special links",
+  "keywords": [
+    "telegram",
+    "Bot",
+    "LazyDeveloper"
+  ],
+  "env": {
+    "TG_BOT_TOKEN": {
+      "description": "7126687134:AAESzP7Fu77SyxK_uGGpXASMQRTw-bzDDQE",
+      "value": ""
+    },
+    "APP_ID":{
+      "description": "29596872",
+      "value": ""
+    },
+    "DATABASE_URI": {
+      "description": "mongodb+srv://gabbarrana19:<db_password>@cluster0.hzdpe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+      "value": "url"
+    },
+    "DATABASE_NAME":{
+      "description": "Cluster0",
+      "value": "Cluster0"
+    },
+    "API_HASH":{
+      "description": "bf21ea46ec90a1521c4461bea8c9a19c",
+      "value": ""
+    },
+    "FORCE_SUB_CHANNEL":{
+      "description": "0",
+      "value": ""
+    },
+    "FORCE_SUB_CHANNEL2":{
+      "description": "0",
+      "value": ""
+    },
+    "START_MESSAGE": {
+      "description": "Optional: start message of bot, use HTML parsemode format",
+      "value": "<b>Hello!! {}</b>"
+    },
+    "FORCE_SUB_MESSAGE": {
+      "description": "Optional: Force Sub message of bot, use HTML parsemode format",
+      "value": "👋 Hello {}!\nTo access these files you have to join our channel first.\nPlease subscribe to our channels through the buttons below and then tap on try again to get your files.\nThank You ❤️"
+    },
+    "ADMINS": {
+      "description": "A space separated list of user_ids of Admins, they can only create links",
+      "value": "",
+      "required": false
+    },
+    "PROTECT_CONTENT": {
+      "description": "Protect contents from getting forwarded",
+      "value": "False",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
