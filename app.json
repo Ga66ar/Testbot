@@ -44,7 +44,7 @@
       "value": "👋 Hello {}!\nTo access these files you have to join our channel first.\nPlease subscribe to our channels through the buttons below and then tap on try again to get your files.\nThank You ❤️"
     },
     "ADMINS": {
-      "description": "A space separated list of user_ids of Admins, they can only create links",
+      "description": "6735550174",
       "value": "",
       "required": false
     },
